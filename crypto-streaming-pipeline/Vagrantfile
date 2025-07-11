@@ -1,0 +1,22 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/jammy64"
+  config.vm.synced_folder "./project", "/home/vagrant/project"
+
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = 4096
+    vb.cpus = 2
+  end
+
+  # Spark default web UI port
+  config.vm.network "forwarded_port", guest: 8080, host: 8080
+
+  # Cassandra default port
+  config.vm.network "forwarded_port", guest: 9042, host: 9042
+
+  # Kafka default port
+  config.vm.network "forwarded_port", guest: 9092, host: 9092
+
+  # Optional: SSH access
+  config.vm.network "forwarded_port", guest: 22, host: 2222, id: "ssh"
+end
