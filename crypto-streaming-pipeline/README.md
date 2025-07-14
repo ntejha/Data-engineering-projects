@@ -1,10 +1,13 @@
+# Crypto streaming pipeline
+
 This is end to end streaming project.
 
-My initial thinking is that, i will create a vagrant VM and do the project on a whole there and then dockerize it. then take the image and put in the ec2 instance for checking.
+My initial thinking is that, i will create a vagrant VM and do the project on a whole there. for better working.
 
 ## Small Demo
 
-[Demo Video](project/images/video.webm)
+[![Watch the video](https://img.youtube.com/vi/VOxR0kBzwKw/0.jpg)](https://www.youtube.com/shorts/VOxR0kBzwKw)
+
 
 ## Prerequisites
 
