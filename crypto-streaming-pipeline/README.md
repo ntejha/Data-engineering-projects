@@ -79,3 +79,52 @@ For Cassandra, setup :
 - edit the bashrc file
 - type in terminal `cassandra`, it will run and detach from terminal
 - `cqlsh` - this will give you access to go inside the cassandra database.
+
+## Sh files 
+
+I have created two sh files for starting the services and stopping the services. for better accessibility
+
+before using it please `chmod +x <file>`, then `./<file>`  to run.
+
+## Coinlore API
+
+Coin Gecko is an free API, which we can pull for this project. It gives me the data for the crypto i ask. It is non-exchange affiliated cryptocurrency data platform. this is useful because it gives unbiased, centralized crytpo market insights.
+
+
+## Last step before running the Sh files
+
+Before the running of the sh files it is important that you make sure to create table inside the cassandra : 
+
+- `cqlsh` for accessing the cassandra terminal, make sure the cassandra service is up and running. then do the below.
+
+```
+CREATE KEYSPACE IF NOT EXISTS crypto 
+WITH replication = {
+    'class': 'SimpleStrategy', 
+    'replication_factor': 1
+};
+
+CREATE TABLE IF NOT EXISTS crypto.prices (
+    id TEXT,                   
+    name TEXT,                 
+    price_usd DOUBLE,          
+    ts BIGINT,                 
+    processing_time TIMESTAMP, 
+    PRIMARY KEY (id, ts)       
+) WITH CLUSTERING ORDER BY (ts DESC);
+```
+## The working of this project
+
+Steps : 
+- once you start the .sh file
+- The zookeeper, Kafka and cassandra gets on. Waits for 30s to fully get on.
+- Then Kafka topic gets created, if does not exist
+- then we start running the producer.py file which connects with Kafka and listens for any data coming every 30s
+- then spark-submit happens to the spark_streaming file which automatically process data every time producers sends new records 
+- then each time it processes writes the data to cassandra.
+- from cassandra the data is shown as output in streamlit dashboard.
+
+![flowchat](images/flowchart.png)
+
+
+
