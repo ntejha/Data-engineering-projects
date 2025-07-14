@@ -124,7 +124,7 @@ Steps :
 - then each time it processes writes the data to cassandra.
 - from cassandra the data is shown as output in streamlit dashboard.
 
-![flowchat](images/flowchart.png)
+![flowchat](project/images/flowchart.png)
 
 
 
