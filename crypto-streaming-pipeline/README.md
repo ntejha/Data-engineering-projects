@@ -2,6 +2,10 @@ This is end to end streaming project.
 
 My initial thinking is that, i will create a vagrant VM and do the project on a whole there and then dockerize it. then take the image and put in the ec2 instance for checking.
 
+## Small Demo
+
+[Demo Video](project/images/video.webm)
+
 ## Prerequisites
 
 Things i need to install and setup before developing in the project : 
@@ -126,5 +130,14 @@ Steps :
 
 ![flowchat](project/images/flowchart.png)
 
+## Spark job 
+
+![spark_dag](project/images/spark_dag.png)
+
+The DAG operations : 
+- MicroBatchScan : reads data from streaming source 
+- Filter : Applies the filter function 
+- Project : Selects specific columns in the cassandra 
+- WholeStageCodegen : Spark  optimization that combines multiple operators into a single function for better performance.
 
 

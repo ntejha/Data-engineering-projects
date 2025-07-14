@@ -1,0 +1,860 @@
+/home/vagrant/spark-3.5.1-bin-hadoop3/conf/spark-env.sh: line 78: export: `=': not a valid identifier
+/home/vagrant/spark-3.5.1-bin-hadoop3/conf/spark-env.sh: line 78: export: `/usr/lib/jvm/java-8-openjdk-amd64': not a valid identifier
+25/07/14 08:19:11 WARN Utils: Your hostname, ubuntu-jammy resolves to a loopback address: 127.0.1.1; using 10.0.2.15 instead (on interface enp0s3)
+25/07/14 08:19:11 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+:: loading settings :: url = jar:file:/home/vagrant/spark-3.5.1-bin-hadoop3/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /home/vagrant/.ivy2/cache
+The jars for the packages stored in: /home/vagrant/.ivy2/jars
+org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+com.datastax.spark#spark-cassandra-connector_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-06184d69-d411-473e-ab5e-8bdbef2afb3d;1.0
+	confs: [default]
+	found org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 in central
+	found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 in central
+	found org.apache.kafka#kafka-clients;3.4.1 in central
+	found org.lz4#lz4-java;1.8.0 in central
+	found org.xerial.snappy#snappy-java;1.1.10.3 in central
+	found org.slf4j#slf4j-api;2.0.7 in central
+	found org.apache.hadoop#hadoop-client-runtime;3.3.4 in central
+	found org.apache.hadoop#hadoop-client-api;3.3.4 in central
+	found commons-logging#commons-logging;1.1.3 in central
+	found com.google.code.findbugs#jsr305;3.0.0 in central
+	found org.apache.commons#commons-pool2;2.11.1 in central
+	found com.datastax.spark#spark-cassandra-connector_2.12;3.5.0 in central
+	found com.datastax.spark#spark-cassandra-connector-driver_2.12;3.5.0 in central
+	found org.scala-lang.modules#scala-collection-compat_2.12;2.11.0 in central
+	found com.datastax.oss#java-driver-core-shaded;4.13.0 in central
+	found com.datastax.oss#native-protocol;1.5.0 in central
+	found com.datastax.oss#java-driver-shaded-guava;25.1-jre-graal-sub-1 in central
+	found com.typesafe#config;1.4.1 in central
+	found io.dropwizard.metrics#metrics-core;4.1.18 in central
+	found org.hdrhistogram#HdrHistogram;2.1.12 in central
+	found org.reactivestreams#reactive-streams;1.0.3 in central
+	found com.github.stephenc.jcip#jcip-annotations;1.0-1 in central
+	found com.github.spotbugs#spotbugs-annotations;3.1.12 in central
+	found com.google.code.findbugs#jsr305;3.0.2 in central
+	found com.datastax.oss#java-driver-mapper-runtime;4.13.0 in central
+	found com.datastax.oss#java-driver-query-builder;4.13.0 in central
+	found org.apache.commons#commons-lang3;3.10 in central
+	found com.thoughtworks.paranamer#paranamer;2.8 in central
+	found org.scala-lang#scala-reflect;2.12.11 in central
+:: resolution report :: resolve 491ms :: artifacts dl 28ms
+	:: modules in use:
+	com.datastax.oss#java-driver-core-shaded;4.13.0 from central in [default]
+	com.datastax.oss#java-driver-mapper-runtime;4.13.0 from central in [default]
+	com.datastax.oss#java-driver-query-builder;4.13.0 from central in [default]
+	com.datastax.oss#java-driver-shaded-guava;25.1-jre-graal-sub-1 from central in [default]
+	com.datastax.oss#native-protocol;1.5.0 from central in [default]
+	com.datastax.spark#spark-cassandra-connector-driver_2.12;3.5.0 from central in [default]
+	com.datastax.spark#spark-cassandra-connector_2.12;3.5.0 from central in [default]
+	com.github.spotbugs#spotbugs-annotations;3.1.12 from central in [default]
+	com.github.stephenc.jcip#jcip-annotations;1.0-1 from central in [default]
+	com.google.code.findbugs#jsr305;3.0.2 from central in [default]
+	com.thoughtworks.paranamer#paranamer;2.8 from central in [default]
+	com.typesafe#config;1.4.1 from central in [default]
+	commons-logging#commons-logging;1.1.3 from central in [default]
+	io.dropwizard.metrics#metrics-core;4.1.18 from central in [default]
+	org.apache.commons#commons-lang3;3.10 from central in [default]
+	org.apache.commons#commons-pool2;2.11.1 from central in [default]
+	org.apache.hadoop#hadoop-client-api;3.3.4 from central in [default]
+	org.apache.hadoop#hadoop-client-runtime;3.3.4 from central in [default]
+	org.apache.kafka#kafka-clients;3.4.1 from central in [default]
+	org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 from central in [default]
+	org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 from central in [default]
+	org.hdrhistogram#HdrHistogram;2.1.12 from central in [default]
+	org.lz4#lz4-java;1.8.0 from central in [default]
+	org.reactivestreams#reactive-streams;1.0.3 from central in [default]
+	org.scala-lang#scala-reflect;2.12.11 from central in [default]
+	org.scala-lang.modules#scala-collection-compat_2.12;2.11.0 from central in [default]
+	org.slf4j#slf4j-api;2.0.7 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.10.3 from central in [default]
+	:: evicted modules:
+	com.google.code.findbugs#jsr305;3.0.0 by [com.google.code.findbugs#jsr305;3.0.2] in [default]
+	org.slf4j#slf4j-api;1.7.26 by [org.slf4j#slf4j-api;2.0.7] in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   30  |   0   |   0   |   2   ||   28  |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-06184d69-d411-473e-ab5e-8bdbef2afb3d
+	confs: [default]
+	0 artifacts copied, 28 already retrieved (0kB/10ms)
+25/07/14 08:19:12 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+25/07/14 08:19:12 INFO SparkContext: Running Spark version 3.5.1
+25/07/14 08:19:12 INFO SparkContext: OS info Linux, 5.15.0-143-generic, amd64
+25/07/14 08:19:12 INFO SparkContext: Java version 1.8.0_452
+25/07/14 08:19:12 INFO ResourceUtils: ==============================================================
+25/07/14 08:19:12 INFO ResourceUtils: No custom resources configured for spark.driver.
+25/07/14 08:19:12 INFO ResourceUtils: ==============================================================
+25/07/14 08:19:12 INFO SparkContext: Submitted application: CryptoDataQuality
+25/07/14 08:19:12 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+25/07/14 08:19:12 INFO ResourceProfile: Limiting resource is cpu
+25/07/14 08:19:12 INFO ResourceProfileManager: Added ResourceProfile id: 0
+25/07/14 08:19:13 INFO SecurityManager: Changing view acls to: vagrant
+25/07/14 08:19:13 INFO SecurityManager: Changing modify acls to: vagrant
+25/07/14 08:19:13 INFO SecurityManager: Changing view acls groups to: 
+25/07/14 08:19:13 INFO SecurityManager: Changing modify acls groups to: 
+25/07/14 08:19:13 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: vagrant; groups with view permissions: EMPTY; users with modify permissions: vagrant; groups with modify permissions: EMPTY
+25/07/14 08:19:13 INFO Utils: Successfully started service 'sparkDriver' on port 36927.
+25/07/14 08:19:13 INFO SparkEnv: Registering MapOutputTracker
+25/07/14 08:19:13 INFO SparkEnv: Registering BlockManagerMaster
+25/07/14 08:19:13 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+25/07/14 08:19:13 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+25/07/14 08:19:13 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+25/07/14 08:19:13 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-d20657ee-4619-4dd4-9f82-9469cdd31f20
+25/07/14 08:19:13 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+25/07/14 08:19:13 INFO SparkEnv: Registering OutputCommitCoordinator
+25/07/14 08:19:13 INFO JettyUtils: Start Jetty 0.0.0.0:8080 for SparkUI
+25/07/14 08:19:13 INFO Utils: Successfully started service 'SparkUI' on port 8080.
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar at spark://10.0.2.15:36927/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/com.datastax.spark_spark-cassandra-connector_2.12-3.5.0.jar at spark://10.0.2.15:36927/jars/com.datastax.spark_spark-cassandra-connector_2.12-3.5.0.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar at spark://10.0.2.15:36927/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/org.apache.kafka_kafka-clients-3.4.1.jar at spark://10.0.2.15:36927/jars/org.apache.kafka_kafka-clients-3.4.1.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/org.apache.commons_commons-pool2-2.11.1.jar at spark://10.0.2.15:36927/jars/org.apache.commons_commons-pool2-2.11.1.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar at spark://10.0.2.15:36927/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/org.lz4_lz4-java-1.8.0.jar at spark://10.0.2.15:36927/jars/org.lz4_lz4-java-1.8.0.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar at spark://10.0.2.15:36927/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/org.slf4j_slf4j-api-2.0.7.jar at spark://10.0.2.15:36927/jars/org.slf4j_slf4j-api-2.0.7.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar at spark://10.0.2.15:36927/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/commons-logging_commons-logging-1.1.3.jar at spark://10.0.2.15:36927/jars/commons-logging_commons-logging-1.1.3.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/com.datastax.spark_spark-cassandra-connector-driver_2.12-3.5.0.jar at spark://10.0.2.15:36927/jars/com.datastax.spark_spark-cassandra-connector-driver_2.12-3.5.0.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/org.scala-lang.modules_scala-collection-compat_2.12-2.11.0.jar at spark://10.0.2.15:36927/jars/org.scala-lang.modules_scala-collection-compat_2.12-2.11.0.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/com.datastax.oss_java-driver-core-shaded-4.13.0.jar at spark://10.0.2.15:36927/jars/com.datastax.oss_java-driver-core-shaded-4.13.0.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/com.datastax.oss_java-driver-mapper-runtime-4.13.0.jar at spark://10.0.2.15:36927/jars/com.datastax.oss_java-driver-mapper-runtime-4.13.0.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/org.apache.commons_commons-lang3-3.10.jar at spark://10.0.2.15:36927/jars/org.apache.commons_commons-lang3-3.10.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/com.thoughtworks.paranamer_paranamer-2.8.jar at spark://10.0.2.15:36927/jars/com.thoughtworks.paranamer_paranamer-2.8.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/org.scala-lang_scala-reflect-2.12.11.jar at spark://10.0.2.15:36927/jars/org.scala-lang_scala-reflect-2.12.11.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/com.datastax.oss_native-protocol-1.5.0.jar at spark://10.0.2.15:36927/jars/com.datastax.oss_native-protocol-1.5.0.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/com.datastax.oss_java-driver-shaded-guava-25.1-jre-graal-sub-1.jar at spark://10.0.2.15:36927/jars/com.datastax.oss_java-driver-shaded-guava-25.1-jre-graal-sub-1.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/com.typesafe_config-1.4.1.jar at spark://10.0.2.15:36927/jars/com.typesafe_config-1.4.1.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/io.dropwizard.metrics_metrics-core-4.1.18.jar at spark://10.0.2.15:36927/jars/io.dropwizard.metrics_metrics-core-4.1.18.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/org.hdrhistogram_HdrHistogram-2.1.12.jar at spark://10.0.2.15:36927/jars/org.hdrhistogram_HdrHistogram-2.1.12.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/org.reactivestreams_reactive-streams-1.0.3.jar at spark://10.0.2.15:36927/jars/org.reactivestreams_reactive-streams-1.0.3.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/com.github.stephenc.jcip_jcip-annotations-1.0-1.jar at spark://10.0.2.15:36927/jars/com.github.stephenc.jcip_jcip-annotations-1.0-1.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/com.github.spotbugs_spotbugs-annotations-3.1.12.jar at spark://10.0.2.15:36927/jars/com.github.spotbugs_spotbugs-annotations-3.1.12.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/com.google.code.findbugs_jsr305-3.0.2.jar at spark://10.0.2.15:36927/jars/com.google.code.findbugs_jsr305-3.0.2.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added JAR file:///home/vagrant/.ivy2/jars/com.datastax.oss_java-driver-query-builder-4.13.0.jar at spark://10.0.2.15:36927/jars/com.datastax.oss_java-driver-query-builder-4.13.0.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar at file:///home/vagrant/.ivy2/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/com.datastax.spark_spark-cassandra-connector_2.12-3.5.0.jar at file:///home/vagrant/.ivy2/jars/com.datastax.spark_spark-cassandra-connector_2.12-3.5.0.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/com.datastax.spark_spark-cassandra-connector_2.12-3.5.0.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.spark_spark-cassandra-connector_2.12-3.5.0.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar at file:///home/vagrant/.ivy2/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/org.apache.kafka_kafka-clients-3.4.1.jar at file:///home/vagrant/.ivy2/jars/org.apache.kafka_kafka-clients-3.4.1.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/org.apache.kafka_kafka-clients-3.4.1.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.kafka_kafka-clients-3.4.1.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/org.apache.commons_commons-pool2-2.11.1.jar at file:///home/vagrant/.ivy2/jars/org.apache.commons_commons-pool2-2.11.1.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/org.apache.commons_commons-pool2-2.11.1.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.commons_commons-pool2-2.11.1.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar at file:///home/vagrant/.ivy2/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/org.lz4_lz4-java-1.8.0.jar at file:///home/vagrant/.ivy2/jars/org.lz4_lz4-java-1.8.0.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/org.lz4_lz4-java-1.8.0.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.lz4_lz4-java-1.8.0.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar at file:///home/vagrant/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.xerial.snappy_snappy-java-1.1.10.3.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/org.slf4j_slf4j-api-2.0.7.jar at file:///home/vagrant/.ivy2/jars/org.slf4j_slf4j-api-2.0.7.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/org.slf4j_slf4j-api-2.0.7.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.slf4j_slf4j-api-2.0.7.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar at file:///home/vagrant/.ivy2/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.hadoop_hadoop-client-api-3.3.4.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/commons-logging_commons-logging-1.1.3.jar at file:///home/vagrant/.ivy2/jars/commons-logging_commons-logging-1.1.3.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/commons-logging_commons-logging-1.1.3.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/commons-logging_commons-logging-1.1.3.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/com.datastax.spark_spark-cassandra-connector-driver_2.12-3.5.0.jar at file:///home/vagrant/.ivy2/jars/com.datastax.spark_spark-cassandra-connector-driver_2.12-3.5.0.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/com.datastax.spark_spark-cassandra-connector-driver_2.12-3.5.0.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.spark_spark-cassandra-connector-driver_2.12-3.5.0.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/org.scala-lang.modules_scala-collection-compat_2.12-2.11.0.jar at file:///home/vagrant/.ivy2/jars/org.scala-lang.modules_scala-collection-compat_2.12-2.11.0.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/org.scala-lang.modules_scala-collection-compat_2.12-2.11.0.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.scala-lang.modules_scala-collection-compat_2.12-2.11.0.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/com.datastax.oss_java-driver-core-shaded-4.13.0.jar at file:///home/vagrant/.ivy2/jars/com.datastax.oss_java-driver-core-shaded-4.13.0.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/com.datastax.oss_java-driver-core-shaded-4.13.0.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.oss_java-driver-core-shaded-4.13.0.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/com.datastax.oss_java-driver-mapper-runtime-4.13.0.jar at file:///home/vagrant/.ivy2/jars/com.datastax.oss_java-driver-mapper-runtime-4.13.0.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/com.datastax.oss_java-driver-mapper-runtime-4.13.0.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.oss_java-driver-mapper-runtime-4.13.0.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/org.apache.commons_commons-lang3-3.10.jar at file:///home/vagrant/.ivy2/jars/org.apache.commons_commons-lang3-3.10.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/org.apache.commons_commons-lang3-3.10.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.commons_commons-lang3-3.10.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/com.thoughtworks.paranamer_paranamer-2.8.jar at file:///home/vagrant/.ivy2/jars/com.thoughtworks.paranamer_paranamer-2.8.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/com.thoughtworks.paranamer_paranamer-2.8.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.thoughtworks.paranamer_paranamer-2.8.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/org.scala-lang_scala-reflect-2.12.11.jar at file:///home/vagrant/.ivy2/jars/org.scala-lang_scala-reflect-2.12.11.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/org.scala-lang_scala-reflect-2.12.11.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.scala-lang_scala-reflect-2.12.11.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/com.datastax.oss_native-protocol-1.5.0.jar at file:///home/vagrant/.ivy2/jars/com.datastax.oss_native-protocol-1.5.0.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/com.datastax.oss_native-protocol-1.5.0.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.oss_native-protocol-1.5.0.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/com.datastax.oss_java-driver-shaded-guava-25.1-jre-graal-sub-1.jar at file:///home/vagrant/.ivy2/jars/com.datastax.oss_java-driver-shaded-guava-25.1-jre-graal-sub-1.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/com.datastax.oss_java-driver-shaded-guava-25.1-jre-graal-sub-1.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.oss_java-driver-shaded-guava-25.1-jre-graal-sub-1.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/com.typesafe_config-1.4.1.jar at file:///home/vagrant/.ivy2/jars/com.typesafe_config-1.4.1.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/com.typesafe_config-1.4.1.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.typesafe_config-1.4.1.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/io.dropwizard.metrics_metrics-core-4.1.18.jar at file:///home/vagrant/.ivy2/jars/io.dropwizard.metrics_metrics-core-4.1.18.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/io.dropwizard.metrics_metrics-core-4.1.18.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/io.dropwizard.metrics_metrics-core-4.1.18.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/org.hdrhistogram_HdrHistogram-2.1.12.jar at file:///home/vagrant/.ivy2/jars/org.hdrhistogram_HdrHistogram-2.1.12.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/org.hdrhistogram_HdrHistogram-2.1.12.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.hdrhistogram_HdrHistogram-2.1.12.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/org.reactivestreams_reactive-streams-1.0.3.jar at file:///home/vagrant/.ivy2/jars/org.reactivestreams_reactive-streams-1.0.3.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/org.reactivestreams_reactive-streams-1.0.3.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.reactivestreams_reactive-streams-1.0.3.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/com.github.stephenc.jcip_jcip-annotations-1.0-1.jar at file:///home/vagrant/.ivy2/jars/com.github.stephenc.jcip_jcip-annotations-1.0-1.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/com.github.stephenc.jcip_jcip-annotations-1.0-1.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.github.stephenc.jcip_jcip-annotations-1.0-1.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/com.github.spotbugs_spotbugs-annotations-3.1.12.jar at file:///home/vagrant/.ivy2/jars/com.github.spotbugs_spotbugs-annotations-3.1.12.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/com.github.spotbugs_spotbugs-annotations-3.1.12.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.github.spotbugs_spotbugs-annotations-3.1.12.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/com.google.code.findbugs_jsr305-3.0.2.jar at file:///home/vagrant/.ivy2/jars/com.google.code.findbugs_jsr305-3.0.2.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/com.google.code.findbugs_jsr305-3.0.2.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.google.code.findbugs_jsr305-3.0.2.jar
+25/07/14 08:19:13 INFO SparkContext: Added file file:///home/vagrant/.ivy2/jars/com.datastax.oss_java-driver-query-builder-4.13.0.jar at file:///home/vagrant/.ivy2/jars/com.datastax.oss_java-driver-query-builder-4.13.0.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Copying /home/vagrant/.ivy2/jars/com.datastax.oss_java-driver-query-builder-4.13.0.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.oss_java-driver-query-builder-4.13.0.jar
+25/07/14 08:19:13 INFO Executor: Starting executor ID driver on host 10.0.2.15
+25/07/14 08:19:13 INFO Executor: OS info Linux, 5.15.0-143-generic, amd64
+25/07/14 08:19:13 INFO Executor: Java version 1.8.0_452
+25/07/14 08:19:13 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+25/07/14 08:19:13 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@21daee3d for default.
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/org.apache.kafka_kafka-clients-3.4.1.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/org.apache.kafka_kafka-clients-3.4.1.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.kafka_kafka-clients-3.4.1.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/com.datastax.spark_spark-cassandra-connector_2.12-3.5.0.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/com.datastax.spark_spark-cassandra-connector_2.12-3.5.0.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.spark_spark-cassandra-connector_2.12-3.5.0.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/org.lz4_lz4-java-1.8.0.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/org.lz4_lz4-java-1.8.0.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.lz4_lz4-java-1.8.0.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/org.hdrhistogram_HdrHistogram-2.1.12.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/org.hdrhistogram_HdrHistogram-2.1.12.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.hdrhistogram_HdrHistogram-2.1.12.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.xerial.snappy_snappy-java-1.1.10.3.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/com.typesafe_config-1.4.1.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/com.typesafe_config-1.4.1.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.typesafe_config-1.4.1.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/io.dropwizard.metrics_metrics-core-4.1.18.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/io.dropwizard.metrics_metrics-core-4.1.18.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/io.dropwizard.metrics_metrics-core-4.1.18.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/org.apache.commons_commons-lang3-3.10.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/org.apache.commons_commons-lang3-3.10.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.commons_commons-lang3-3.10.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/com.datastax.oss_native-protocol-1.5.0.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/com.datastax.oss_native-protocol-1.5.0.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.oss_native-protocol-1.5.0.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/com.github.stephenc.jcip_jcip-annotations-1.0-1.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/com.github.stephenc.jcip_jcip-annotations-1.0-1.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.github.stephenc.jcip_jcip-annotations-1.0-1.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/com.datastax.oss_java-driver-mapper-runtime-4.13.0.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/com.datastax.oss_java-driver-mapper-runtime-4.13.0.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.oss_java-driver-mapper-runtime-4.13.0.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/org.scala-lang.modules_scala-collection-compat_2.12-2.11.0.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/org.scala-lang.modules_scala-collection-compat_2.12-2.11.0.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.scala-lang.modules_scala-collection-compat_2.12-2.11.0.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/org.slf4j_slf4j-api-2.0.7.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/org.slf4j_slf4j-api-2.0.7.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.slf4j_slf4j-api-2.0.7.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/org.apache.commons_commons-pool2-2.11.1.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/org.apache.commons_commons-pool2-2.11.1.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.commons_commons-pool2-2.11.1.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/com.github.spotbugs_spotbugs-annotations-3.1.12.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/com.github.spotbugs_spotbugs-annotations-3.1.12.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.github.spotbugs_spotbugs-annotations-3.1.12.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/commons-logging_commons-logging-1.1.3.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/commons-logging_commons-logging-1.1.3.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/commons-logging_commons-logging-1.1.3.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/com.google.code.findbugs_jsr305-3.0.2.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/com.google.code.findbugs_jsr305-3.0.2.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.google.code.findbugs_jsr305-3.0.2.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/org.scala-lang_scala-reflect-2.12.11.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/org.scala-lang_scala-reflect-2.12.11.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.scala-lang_scala-reflect-2.12.11.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/com.datastax.spark_spark-cassandra-connector-driver_2.12-3.5.0.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/com.datastax.spark_spark-cassandra-connector-driver_2.12-3.5.0.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.spark_spark-cassandra-connector-driver_2.12-3.5.0.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/com.datastax.oss_java-driver-core-shaded-4.13.0.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/com.datastax.oss_java-driver-core-shaded-4.13.0.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.oss_java-driver-core-shaded-4.13.0.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/com.datastax.oss_java-driver-query-builder-4.13.0.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/com.datastax.oss_java-driver-query-builder-4.13.0.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.oss_java-driver-query-builder-4.13.0.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.hadoop_hadoop-client-api-3.3.4.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/org.reactivestreams_reactive-streams-1.0.3.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/org.reactivestreams_reactive-streams-1.0.3.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.reactivestreams_reactive-streams-1.0.3.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/com.datastax.oss_java-driver-shaded-guava-25.1-jre-graal-sub-1.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/com.datastax.oss_java-driver-shaded-guava-25.1-jre-graal-sub-1.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.oss_java-driver-shaded-guava-25.1-jre-graal-sub-1.jar
+25/07/14 08:19:13 INFO Executor: Fetching file:///home/vagrant/.ivy2/jars/com.thoughtworks.paranamer_paranamer-2.8.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: /home/vagrant/.ivy2/jars/com.thoughtworks.paranamer_paranamer-2.8.jar has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.thoughtworks.paranamer_paranamer-2.8.jar
+25/07/14 08:19:13 INFO Executor: Fetching spark://10.0.2.15:36927/jars/org.apache.commons_commons-pool2-2.11.1.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO TransportClientFactory: Successfully created connection to /10.0.2.15:36927 after 16 ms (0 ms spent in bootstraps)
+25/07/14 08:19:13 INFO Utils: Fetching spark://10.0.2.15:36927/jars/org.apache.commons_commons-pool2-2.11.1.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp3601032664903870903.tmp
+25/07/14 08:19:13 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp3601032664903870903.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.commons_commons-pool2-2.11.1.jar
+25/07/14 08:19:13 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.commons_commons-pool2-2.11.1.jar to class loader default
+25/07/14 08:19:13 INFO Executor: Fetching spark://10.0.2.15:36927/jars/com.google.code.findbugs_jsr305-3.0.2.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Fetching spark://10.0.2.15:36927/jars/com.google.code.findbugs_jsr305-3.0.2.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp4866888385714302197.tmp
+25/07/14 08:19:13 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp4866888385714302197.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.google.code.findbugs_jsr305-3.0.2.jar
+25/07/14 08:19:13 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.google.code.findbugs_jsr305-3.0.2.jar to class loader default
+25/07/14 08:19:13 INFO Executor: Fetching spark://10.0.2.15:36927/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Fetching spark://10.0.2.15:36927/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp1288664580863040327.tmp
+25/07/14 08:19:13 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp1288664580863040327.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar
+25/07/14 08:19:13 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar to class loader default
+25/07/14 08:19:13 INFO Executor: Fetching spark://10.0.2.15:36927/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar with timestamp 1752481152853
+25/07/14 08:19:13 INFO Utils: Fetching spark://10.0.2.15:36927/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp6532728905231515235.tmp
+25/07/14 08:19:14 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp6532728905231515235.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.hadoop_hadoop-client-api-3.3.4.jar
+25/07/14 08:19:14 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.hadoop_hadoop-client-api-3.3.4.jar to class loader default
+25/07/14 08:19:14 INFO Executor: Fetching spark://10.0.2.15:36927/jars/org.apache.kafka_kafka-clients-3.4.1.jar with timestamp 1752481152853
+25/07/14 08:19:14 INFO Utils: Fetching spark://10.0.2.15:36927/jars/org.apache.kafka_kafka-clients-3.4.1.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp1074109595084732486.tmp
+25/07/14 08:19:14 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp1074109595084732486.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.kafka_kafka-clients-3.4.1.jar
+25/07/14 08:19:14 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.kafka_kafka-clients-3.4.1.jar to class loader default
+25/07/14 08:19:14 INFO Executor: Fetching spark://10.0.2.15:36927/jars/com.thoughtworks.paranamer_paranamer-2.8.jar with timestamp 1752481152853
+25/07/14 08:19:14 INFO Utils: Fetching spark://10.0.2.15:36927/jars/com.thoughtworks.paranamer_paranamer-2.8.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp3845950074958416195.tmp
+25/07/14 08:19:14 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp3845950074958416195.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.thoughtworks.paranamer_paranamer-2.8.jar
+25/07/14 08:19:14 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.thoughtworks.paranamer_paranamer-2.8.jar to class loader default
+25/07/14 08:19:14 INFO Executor: Fetching spark://10.0.2.15:36927/jars/com.datastax.oss_java-driver-core-shaded-4.13.0.jar with timestamp 1752481152853
+25/07/14 08:19:14 INFO Utils: Fetching spark://10.0.2.15:36927/jars/com.datastax.oss_java-driver-core-shaded-4.13.0.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp3837421357971851800.tmp
+25/07/14 08:19:14 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp3837421357971851800.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.oss_java-driver-core-shaded-4.13.0.jar
+25/07/14 08:19:14 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.oss_java-driver-core-shaded-4.13.0.jar to class loader default
+25/07/14 08:19:14 INFO Executor: Fetching spark://10.0.2.15:36927/jars/io.dropwizard.metrics_metrics-core-4.1.18.jar with timestamp 1752481152853
+25/07/14 08:19:14 INFO Utils: Fetching spark://10.0.2.15:36927/jars/io.dropwizard.metrics_metrics-core-4.1.18.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp3932771888150400275.tmp
+25/07/14 08:19:14 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp3932771888150400275.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/io.dropwizard.metrics_metrics-core-4.1.18.jar
+25/07/14 08:19:14 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/io.dropwizard.metrics_metrics-core-4.1.18.jar to class loader default
+25/07/14 08:19:14 INFO Executor: Fetching spark://10.0.2.15:36927/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar with timestamp 1752481152853
+25/07/14 08:19:14 INFO Utils: Fetching spark://10.0.2.15:36927/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp5112159494702658920.tmp
+25/07/14 08:19:14 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp5112159494702658920.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.xerial.snappy_snappy-java-1.1.10.3.jar
+25/07/14 08:19:14 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.xerial.snappy_snappy-java-1.1.10.3.jar to class loader default
+25/07/14 08:19:14 INFO Executor: Fetching spark://10.0.2.15:36927/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar with timestamp 1752481152853
+25/07/14 08:19:14 INFO Utils: Fetching spark://10.0.2.15:36927/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp2207771423488552028.tmp
+25/07/14 08:19:14 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp2207771423488552028.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar
+25/07/14 08:19:14 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar to class loader default
+25/07/14 08:19:14 INFO Executor: Fetching spark://10.0.2.15:36927/jars/com.datastax.spark_spark-cassandra-connector_2.12-3.5.0.jar with timestamp 1752481152853
+25/07/14 08:19:14 INFO Utils: Fetching spark://10.0.2.15:36927/jars/com.datastax.spark_spark-cassandra-connector_2.12-3.5.0.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp2962422250835164306.tmp
+25/07/14 08:19:14 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp2962422250835164306.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.spark_spark-cassandra-connector_2.12-3.5.0.jar
+25/07/14 08:19:14 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.spark_spark-cassandra-connector_2.12-3.5.0.jar to class loader default
+25/07/14 08:19:14 INFO Executor: Fetching spark://10.0.2.15:36927/jars/com.datastax.spark_spark-cassandra-connector-driver_2.12-3.5.0.jar with timestamp 1752481152853
+25/07/14 08:19:14 INFO Utils: Fetching spark://10.0.2.15:36927/jars/com.datastax.spark_spark-cassandra-connector-driver_2.12-3.5.0.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp4616731621543369909.tmp
+25/07/14 08:19:14 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp4616731621543369909.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.spark_spark-cassandra-connector-driver_2.12-3.5.0.jar
+25/07/14 08:19:14 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.spark_spark-cassandra-connector-driver_2.12-3.5.0.jar to class loader default
+25/07/14 08:19:14 INFO Executor: Fetching spark://10.0.2.15:36927/jars/org.slf4j_slf4j-api-2.0.7.jar with timestamp 1752481152853
+25/07/14 08:19:14 INFO Utils: Fetching spark://10.0.2.15:36927/jars/org.slf4j_slf4j-api-2.0.7.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp541372079960089519.tmp
+25/07/14 08:19:14 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp541372079960089519.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.slf4j_slf4j-api-2.0.7.jar
+25/07/14 08:19:14 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.slf4j_slf4j-api-2.0.7.jar to class loader default
+25/07/14 08:19:14 INFO Executor: Fetching spark://10.0.2.15:36927/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar with timestamp 1752481152853
+25/07/14 08:19:14 INFO Utils: Fetching spark://10.0.2.15:36927/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp6208566033538759893.tmp
+25/07/14 08:19:14 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp6208566033538759893.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar
+25/07/14 08:19:14 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar to class loader default
+25/07/14 08:19:14 INFO Executor: Fetching spark://10.0.2.15:36927/jars/com.datastax.oss_java-driver-mapper-runtime-4.13.0.jar with timestamp 1752481152853
+25/07/14 08:19:14 INFO Utils: Fetching spark://10.0.2.15:36927/jars/com.datastax.oss_java-driver-mapper-runtime-4.13.0.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp8456937098894144525.tmp
+25/07/14 08:19:14 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp8456937098894144525.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.oss_java-driver-mapper-runtime-4.13.0.jar
+25/07/14 08:19:14 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.oss_java-driver-mapper-runtime-4.13.0.jar to class loader default
+25/07/14 08:19:14 INFO Executor: Fetching spark://10.0.2.15:36927/jars/org.scala-lang.modules_scala-collection-compat_2.12-2.11.0.jar with timestamp 1752481152853
+25/07/14 08:19:14 INFO Utils: Fetching spark://10.0.2.15:36927/jars/org.scala-lang.modules_scala-collection-compat_2.12-2.11.0.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp4530434189389173518.tmp
+25/07/14 08:19:14 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp4530434189389173518.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.scala-lang.modules_scala-collection-compat_2.12-2.11.0.jar
+25/07/14 08:19:14 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.scala-lang.modules_scala-collection-compat_2.12-2.11.0.jar to class loader default
+25/07/14 08:19:14 INFO Executor: Fetching spark://10.0.2.15:36927/jars/com.datastax.oss_java-driver-query-builder-4.13.0.jar with timestamp 1752481152853
+25/07/14 08:19:14 INFO Utils: Fetching spark://10.0.2.15:36927/jars/com.datastax.oss_java-driver-query-builder-4.13.0.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp8730589907684589102.tmp
+25/07/14 08:19:14 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp8730589907684589102.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.oss_java-driver-query-builder-4.13.0.jar
+25/07/14 08:19:14 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.oss_java-driver-query-builder-4.13.0.jar to class loader default
+25/07/14 08:19:14 INFO Executor: Fetching spark://10.0.2.15:36927/jars/com.datastax.oss_native-protocol-1.5.0.jar with timestamp 1752481152853
+25/07/14 08:19:14 INFO Utils: Fetching spark://10.0.2.15:36927/jars/com.datastax.oss_native-protocol-1.5.0.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp5381632190128854731.tmp
+25/07/14 08:19:14 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp5381632190128854731.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.oss_native-protocol-1.5.0.jar
+25/07/14 08:19:14 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.oss_native-protocol-1.5.0.jar to class loader default
+25/07/14 08:19:14 INFO Executor: Fetching spark://10.0.2.15:36927/jars/org.hdrhistogram_HdrHistogram-2.1.12.jar with timestamp 1752481152853
+25/07/14 08:19:14 INFO Utils: Fetching spark://10.0.2.15:36927/jars/org.hdrhistogram_HdrHistogram-2.1.12.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp2003897387324425148.tmp
+25/07/14 08:19:14 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp2003897387324425148.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.hdrhistogram_HdrHistogram-2.1.12.jar
+25/07/14 08:19:14 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.hdrhistogram_HdrHistogram-2.1.12.jar to class loader default
+25/07/14 08:19:14 INFO Executor: Fetching spark://10.0.2.15:36927/jars/com.github.stephenc.jcip_jcip-annotations-1.0-1.jar with timestamp 1752481152853
+25/07/14 08:19:14 INFO Utils: Fetching spark://10.0.2.15:36927/jars/com.github.stephenc.jcip_jcip-annotations-1.0-1.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp192846336754114859.tmp
+25/07/14 08:19:14 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp192846336754114859.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.github.stephenc.jcip_jcip-annotations-1.0-1.jar
+25/07/14 08:19:14 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.github.stephenc.jcip_jcip-annotations-1.0-1.jar to class loader default
+25/07/14 08:19:14 INFO Executor: Fetching spark://10.0.2.15:36927/jars/com.typesafe_config-1.4.1.jar with timestamp 1752481152853
+25/07/14 08:19:14 INFO Utils: Fetching spark://10.0.2.15:36927/jars/com.typesafe_config-1.4.1.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp6676651040235899718.tmp
+25/07/14 08:19:14 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp6676651040235899718.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.typesafe_config-1.4.1.jar
+25/07/14 08:19:14 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.typesafe_config-1.4.1.jar to class loader default
+25/07/14 08:19:14 INFO Executor: Fetching spark://10.0.2.15:36927/jars/com.github.spotbugs_spotbugs-annotations-3.1.12.jar with timestamp 1752481152853
+25/07/14 08:19:14 INFO Utils: Fetching spark://10.0.2.15:36927/jars/com.github.spotbugs_spotbugs-annotations-3.1.12.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp2171597308581626035.tmp
+25/07/14 08:19:14 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp2171597308581626035.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.github.spotbugs_spotbugs-annotations-3.1.12.jar
+25/07/14 08:19:14 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.github.spotbugs_spotbugs-annotations-3.1.12.jar to class loader default
+25/07/14 08:19:14 INFO Executor: Fetching spark://10.0.2.15:36927/jars/com.datastax.oss_java-driver-shaded-guava-25.1-jre-graal-sub-1.jar with timestamp 1752481152853
+25/07/14 08:19:14 INFO Utils: Fetching spark://10.0.2.15:36927/jars/com.datastax.oss_java-driver-shaded-guava-25.1-jre-graal-sub-1.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp2229286281106783739.tmp
+25/07/14 08:19:14 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp2229286281106783739.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.oss_java-driver-shaded-guava-25.1-jre-graal-sub-1.jar
+25/07/14 08:19:14 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/com.datastax.oss_java-driver-shaded-guava-25.1-jre-graal-sub-1.jar to class loader default
+25/07/14 08:19:14 INFO Executor: Fetching spark://10.0.2.15:36927/jars/org.scala-lang_scala-reflect-2.12.11.jar with timestamp 1752481152853
+25/07/14 08:19:14 INFO Utils: Fetching spark://10.0.2.15:36927/jars/org.scala-lang_scala-reflect-2.12.11.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp3293399285247758605.tmp
+25/07/14 08:19:14 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp3293399285247758605.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.scala-lang_scala-reflect-2.12.11.jar
+25/07/14 08:19:14 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.scala-lang_scala-reflect-2.12.11.jar to class loader default
+25/07/14 08:19:14 INFO Executor: Fetching spark://10.0.2.15:36927/jars/org.apache.commons_commons-lang3-3.10.jar with timestamp 1752481152853
+25/07/14 08:19:14 INFO Utils: Fetching spark://10.0.2.15:36927/jars/org.apache.commons_commons-lang3-3.10.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp4374100704607999024.tmp
+25/07/14 08:19:14 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp4374100704607999024.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.commons_commons-lang3-3.10.jar
+25/07/14 08:19:14 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.apache.commons_commons-lang3-3.10.jar to class loader default
+25/07/14 08:19:14 INFO Executor: Fetching spark://10.0.2.15:36927/jars/org.lz4_lz4-java-1.8.0.jar with timestamp 1752481152853
+25/07/14 08:19:14 INFO Utils: Fetching spark://10.0.2.15:36927/jars/org.lz4_lz4-java-1.8.0.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp8902887312690734814.tmp
+25/07/14 08:19:14 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp8902887312690734814.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.lz4_lz4-java-1.8.0.jar
+25/07/14 08:19:14 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.lz4_lz4-java-1.8.0.jar to class loader default
+25/07/14 08:19:14 INFO Executor: Fetching spark://10.0.2.15:36927/jars/commons-logging_commons-logging-1.1.3.jar with timestamp 1752481152853
+25/07/14 08:19:14 INFO Utils: Fetching spark://10.0.2.15:36927/jars/commons-logging_commons-logging-1.1.3.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp7263290734989188046.tmp
+25/07/14 08:19:14 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp7263290734989188046.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/commons-logging_commons-logging-1.1.3.jar
+25/07/14 08:19:14 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/commons-logging_commons-logging-1.1.3.jar to class loader default
+25/07/14 08:19:14 INFO Executor: Fetching spark://10.0.2.15:36927/jars/org.reactivestreams_reactive-streams-1.0.3.jar with timestamp 1752481152853
+25/07/14 08:19:14 INFO Utils: Fetching spark://10.0.2.15:36927/jars/org.reactivestreams_reactive-streams-1.0.3.jar to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp1367415073748970593.tmp
+25/07/14 08:19:14 INFO Utils: /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/fetchFileTemp1367415073748970593.tmp has been previously copied to /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.reactivestreams_reactive-streams-1.0.3.jar
+25/07/14 08:19:14 INFO Executor: Adding file:/tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/userFiles-e0ad85ab-6a72-449b-a031-d867ddc13198/org.reactivestreams_reactive-streams-1.0.3.jar to class loader default
+25/07/14 08:19:14 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 34155.
+25/07/14 08:19:14 INFO NettyBlockTransferService: Server created on 10.0.2.15:34155
+25/07/14 08:19:14 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+25/07/14 08:19:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 10.0.2.15, 34155, None)
+25/07/14 08:19:14 INFO BlockManagerMasterEndpoint: Registering block manager 10.0.2.15:34155 with 366.3 MiB RAM, BlockManagerId(driver, 10.0.2.15, 34155, None)
+25/07/14 08:19:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 10.0.2.15, 34155, None)
+25/07/14 08:19:14 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 10.0.2.15, 34155, None)
+25/07/14 08:19:14 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+25/07/14 08:19:14 INFO SharedState: Warehouse path is 'file:/home/vagrant/project/scripts/spark-warehouse'.
+25/07/14 08:19:16 INFO DefaultMavenCoordinates: DataStax Java driver for Apache Cassandra(R) (com.datastax.oss:java-driver-core-shaded) version 4.13.0
+25/07/14 08:19:16 INFO Native: Unable to load JNR native implementation. This could be normal if JNR is excluded from the classpath
+java.lang.NoClassDefFoundError: jnr/posix/POSIXHandler
+	at com.datastax.oss.driver.internal.core.os.Native$LibcLoader.load(Native.java:42)
+	at com.datastax.oss.driver.internal.core.os.Native.<clinit>(Native.java:59)
+	at com.datastax.oss.driver.internal.core.time.Clock.getInstance(Clock.java:41)
+	at com.datastax.oss.driver.internal.core.time.MonotonicTimestampGenerator.buildClock(MonotonicTimestampGenerator.java:109)
+	at com.datastax.oss.driver.internal.core.time.MonotonicTimestampGenerator.<init>(MonotonicTimestampGenerator.java:43)
+	at com.datastax.oss.driver.internal.core.time.AtomicTimestampGenerator.<init>(AtomicTimestampGenerator.java:52)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.datastax.oss.driver.internal.core.util.Reflection.resolveClass(Reflection.java:329)
+	at com.datastax.oss.driver.internal.core.util.Reflection.buildFromConfig(Reflection.java:235)
+	at com.datastax.oss.driver.internal.core.util.Reflection.buildFromConfig(Reflection.java:110)
+	at com.datastax.oss.driver.internal.core.context.DefaultDriverContext.buildTimestampGenerator(DefaultDriverContext.java:377)
+	at com.datastax.oss.driver.internal.core.util.concurrent.LazyReference.get(LazyReference.java:55)
+	at com.datastax.oss.driver.internal.core.context.DefaultDriverContext.getTimestampGenerator(DefaultDriverContext.java:773)
+	at com.datastax.oss.driver.internal.core.session.DefaultSession$SingleThreaded.init(DefaultSession.java:349)
+	at com.datastax.oss.driver.internal.core.session.DefaultSession$SingleThreaded.access$1100(DefaultSession.java:300)
+	at com.datastax.oss.driver.internal.core.session.DefaultSession.lambda$init$0(DefaultSession.java:146)
+	at com.datastax.oss.driver.shaded.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at com.datastax.oss.driver.shaded.netty.util.concurrent.PromiseTask.run(PromiseTask.java:106)
+	at com.datastax.oss.driver.shaded.netty.channel.DefaultEventLoop.run(DefaultEventLoop.java:54)
+	at com.datastax.oss.driver.shaded.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at com.datastax.oss.driver.shaded.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at com.datastax.oss.driver.shaded.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.ClassNotFoundException: jnr.posix.POSIXHandler
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 26 more
+25/07/14 08:19:16 INFO Clock: Could not access native clock (see debug logs for details), falling back to Java system clock
+25/07/14 08:19:17 INFO CassandraConnector: Connected to Cassandra cluster.
+25/07/14 08:19:17 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+25/07/14 08:19:17 INFO ResolveWriteToStream: Checkpoint root /tmp/checkpoint resolved to file:/tmp/checkpoint.
+25/07/14 08:19:17 WARN ResolveWriteToStream: spark.sql.adaptive.enabled is not supported in streaming DataFrames/Datasets and will be disabled.
+25/07/14 08:19:17 INFO CheckpointFileManager: Writing atomically to file:/tmp/checkpoint/metadata using temp file file:/tmp/checkpoint/.metadata.defd441e-7899-428b-9642-d9b5028b0a6e.tmp
+25/07/14 08:19:17 INFO CheckpointFileManager: Renamed temp file file:/tmp/checkpoint/.metadata.defd441e-7899-428b-9642-d9b5028b0a6e.tmp to file:/tmp/checkpoint/metadata
+25/07/14 08:19:17 INFO MicroBatchExecution: Starting [id = b10c372a-1aa5-44a6-96be-2b5c60976740, runId = 7bb89c01-9b47-453a-8538-cf4f5d509638]. Use file:/tmp/checkpoint to store the query checkpoint.
+25/07/14 08:19:17 INFO MicroBatchExecution: Reading table [org.apache.spark.sql.kafka010.KafkaSourceProvider$KafkaTable@4d88d0b] from DataSourceV2 named 'kafka' [org.apache.spark.sql.kafka010.KafkaSourceProvider@7514f19f]
+25/07/14 08:19:17 INFO OffsetSeqLog: BatchIds found from listing: 
+25/07/14 08:19:17 INFO OffsetSeqLog: BatchIds found from listing: 
+25/07/14 08:19:17 INFO MicroBatchExecution: Starting new streaming query.
+25/07/14 08:19:18 INFO MicroBatchExecution: Stream started from {}
+25/07/14 08:19:18 INFO AdminClientConfig: AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+25/07/14 08:19:18 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+25/07/14 08:19:18 INFO AppInfoParser: Kafka version: 3.4.1
+25/07/14 08:19:18 INFO AppInfoParser: Kafka commitId: 8a516edc2755df89
+25/07/14 08:19:18 INFO AppInfoParser: Kafka startTimeMs: 1752481158352
+25/07/14 08:19:18 INFO CheckpointFileManager: Writing atomically to file:/tmp/checkpoint/sources/0/0 using temp file file:/tmp/checkpoint/sources/0/.0.1e366b1d-7514-498f-af5e-33745e560bc1.tmp
+25/07/14 08:19:18 INFO CheckpointFileManager: Renamed temp file file:/tmp/checkpoint/sources/0/.0.1e366b1d-7514-498f-af5e-33745e560bc1.tmp to file:/tmp/checkpoint/sources/0/0
+25/07/14 08:19:18 INFO KafkaMicroBatchStream: Initial offsets: {"crypto-data":{"0":100}}
+25/07/14 08:19:18 INFO CheckpointFileManager: Writing atomically to file:/tmp/checkpoint/offsets/0 using temp file file:/tmp/checkpoint/offsets/.0.3cb0acc1-6fa2-42f3-9680-22e9cdd37550.tmp
+25/07/14 08:19:18 INFO CheckpointFileManager: Renamed temp file file:/tmp/checkpoint/offsets/.0.3cb0acc1-6fa2-42f3-9680-22e9cdd37550.tmp to file:/tmp/checkpoint/offsets/0
+25/07/14 08:19:18 INFO MicroBatchExecution: Committed offsets for batch 0. Metadata OffsetSeqMetadata(0,1752481158832,Map(spark.sql.streaming.stateStore.providerClass -> org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider, spark.sql.streaming.join.stateFormatVersion -> 2, spark.sql.streaming.stateStore.compression.codec -> lz4, spark.sql.streaming.stateStore.rocksdb.formatVersion -> 5, spark.sql.streaming.statefulOperator.useStrictDistribution -> true, spark.sql.streaming.flatMapGroupsWithState.stateFormatVersion -> 2, spark.sql.streaming.multipleWatermarkPolicy -> min, spark.sql.streaming.aggregation.stateFormatVersion -> 2, spark.sql.shuffle.partitions -> 200))
+25/07/14 08:19:19 INFO KafkaOffsetReaderAdmin: Partitions added: Map()
+25/07/14 08:19:19 INFO KafkaOffsetReaderAdmin: Partitions added: Map()
+25/07/14 08:19:19 INFO KafkaOffsetReaderAdmin: Partitions added: Map()
+25/07/14 08:19:19 INFO KafkaOffsetReaderAdmin: Partitions added: Map()
+25/07/14 08:19:19 INFO KafkaOffsetReaderAdmin: Partitions added: Map()
+25/07/14 08:19:19 INFO KafkaOffsetReaderAdmin: Partitions added: Map()
+25/07/14 08:19:20 INFO CodeGenerator: Code generated in 180.359337 ms
+25/07/14 08:19:20 INFO WriteToDataSourceV2Exec: Start processing data source write support: MicroBatchWrite[epoch: 0, writer: CassandraBulkWrite(org.apache.spark.sql.SparkSession@1189b74,com.datastax.spark.connector.cql.CassandraConnector@1474bc93,TableDef(crypto,prices,ArrayBuffer(ColumnDef(id,PartitionKeyColumn,VarCharType)),ArrayBuffer(ColumnDef(ts,ClusteringColumn(0,ASC),BigIntType)),Stream(ColumnDef(name,RegularColumn,VarCharType), ColumnDef(price_usd,RegularColumn,DoubleType), ColumnDef(processing_time,RegularColumn,TimestampType)),Stream(),false,false,Map()),WriteConf(BytesInBatch(1024),1000,Partition,LOCAL_QUORUM,false,false,5,None,TTLOption(DefaultValue),TimestampOption(DefaultValue),true,None),StructType(StructField(id,StringType,true),StructField(name,StringType,true),StructField(price_usd,DoubleType,true),StructField(ts,LongType,true),StructField(processing_time,TimestampType,true)),org.apache.spark.SparkConf@3bb52421)]. The input RDD has 1 partitions.
+25/07/14 08:19:20 INFO SparkContext: Starting job: start at NativeMethodAccessorImpl.java:0
+25/07/14 08:19:20 INFO DAGScheduler: Got job 0 (start at NativeMethodAccessorImpl.java:0) with 1 output partitions
+25/07/14 08:19:20 INFO DAGScheduler: Final stage: ResultStage 0 (start at NativeMethodAccessorImpl.java:0)
+25/07/14 08:19:20 INFO DAGScheduler: Parents of final stage: List()
+25/07/14 08:19:20 INFO DAGScheduler: Missing parents: List()
+25/07/14 08:19:20 INFO DAGScheduler: Submitting ResultStage 0 (ParallelCollectionRDD[5] at start at NativeMethodAccessorImpl.java:0), which has no missing parents
+25/07/14 08:19:20 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 10.6 KiB, free 366.3 MiB)
+25/07/14 08:19:20 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 5.5 KiB, free 366.3 MiB)
+25/07/14 08:19:20 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.0.2.15:34155 (size: 5.5 KiB, free: 366.3 MiB)
+25/07/14 08:19:20 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1585
+25/07/14 08:19:20 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (ParallelCollectionRDD[5] at start at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+25/07/14 08:19:20 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+25/07/14 08:19:20 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (10.0.2.15, executor driver, partition 0, PROCESS_LOCAL, 13035 bytes) 
+25/07/14 08:19:20 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+25/07/14 08:19:20 INFO DataWritingSparkTask: Commit authorized for partition 0 (task 0, attempt 0, stage 0.0)
+25/07/14 08:19:20 INFO DataWritingSparkTask: Committed partition 0 (task 0, attempt 0, stage 0.0)
+25/07/14 08:19:20 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1124 bytes result sent to driver
+25/07/14 08:19:20 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 317 ms on 10.0.2.15 (executor driver) (1/1)
+25/07/14 08:19:20 INFO DAGScheduler: ResultStage 0 (start at NativeMethodAccessorImpl.java:0) finished in 0.446 s
+25/07/14 08:19:20 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+25/07/14 08:19:20 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+25/07/14 08:19:20 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+25/07/14 08:19:20 INFO DAGScheduler: Job 0 finished: start at NativeMethodAccessorImpl.java:0, took 0.500453 s
+25/07/14 08:19:20 INFO WriteToDataSourceV2Exec: Data source write support MicroBatchWrite[epoch: 0, writer: CassandraBulkWrite(org.apache.spark.sql.SparkSession@1189b74,com.datastax.spark.connector.cql.CassandraConnector@1474bc93,TableDef(crypto,prices,ArrayBuffer(ColumnDef(id,PartitionKeyColumn,VarCharType)),ArrayBuffer(ColumnDef(ts,ClusteringColumn(0,ASC),BigIntType)),Stream(ColumnDef(name,RegularColumn,VarCharType), ColumnDef(price_usd,RegularColumn,DoubleType), ColumnDef(processing_time,RegularColumn,TimestampType)),Stream(),false,false,Map()),WriteConf(BytesInBatch(1024),1000,Partition,LOCAL_QUORUM,false,false,5,None,TTLOption(DefaultValue),TimestampOption(DefaultValue),true,None),StructType(StructField(id,StringType,true),StructField(name,StringType,true),StructField(price_usd,DoubleType,true),StructField(ts,LongType,true),StructField(processing_time,TimestampType,true)),org.apache.spark.SparkConf@3bb52421)] is committing.
+25/07/14 08:19:20 INFO WriteToDataSourceV2Exec: Data source write support MicroBatchWrite[epoch: 0, writer: CassandraBulkWrite(org.apache.spark.sql.SparkSession@1189b74,com.datastax.spark.connector.cql.CassandraConnector@1474bc93,TableDef(crypto,prices,ArrayBuffer(ColumnDef(id,PartitionKeyColumn,VarCharType)),ArrayBuffer(ColumnDef(ts,ClusteringColumn(0,ASC),BigIntType)),Stream(ColumnDef(name,RegularColumn,VarCharType), ColumnDef(price_usd,RegularColumn,DoubleType), ColumnDef(processing_time,RegularColumn,TimestampType)),Stream(),false,false,Map()),WriteConf(BytesInBatch(1024),1000,Partition,LOCAL_QUORUM,false,false,5,None,TTLOption(DefaultValue),TimestampOption(DefaultValue),true,None),StructType(StructField(id,StringType,true),StructField(name,StringType,true),StructField(price_usd,DoubleType,true),StructField(ts,LongType,true),StructField(processing_time,TimestampType,true)),org.apache.spark.SparkConf@3bb52421)] committed.
+25/07/14 08:19:20 INFO CheckpointFileManager: Writing atomically to file:/tmp/checkpoint/commits/0 using temp file file:/tmp/checkpoint/commits/.0.a2234da8-f31e-4a93-b881-f78d1f72ec68.tmp
+25/07/14 08:19:20 INFO CheckpointFileManager: Renamed temp file file:/tmp/checkpoint/commits/.0.a2234da8-f31e-4a93-b881-f78d1f72ec68.tmp to file:/tmp/checkpoint/commits/0
+25/07/14 08:19:20 INFO MicroBatchExecution: Streaming query made progress: {
+  "id" : "b10c372a-1aa5-44a6-96be-2b5c60976740",
+  "runId" : "7bb89c01-9b47-453a-8538-cf4f5d509638",
+  "name" : null,
+  "timestamp" : "2025-07-14T08:19:17.988Z",
+  "batchId" : 0,
+  "numInputRows" : 0,
+  "inputRowsPerSecond" : 0.0,
+  "processedRowsPerSecond" : 0.0,
+  "durationMs" : {
+    "addBatch" : 1136,
+    "commitOffsets" : 30,
+    "getBatch" : 19,
+    "latestOffset" : 829,
+    "queryPlanning" : 791,
+    "triggerExecution" : 2862,
+    "walCommit" : 35
+  },
+  "stateOperators" : [ ],
+  "sources" : [ {
+    "description" : "KafkaV2[Subscribe[crypto-data]]",
+    "startOffset" : null,
+    "endOffset" : {
+      "crypto-data" : {
+        "0" : 100
+      }
+    },
+    "latestOffset" : {
+      "crypto-data" : {
+        "0" : 100
+      }
+    },
+    "numInputRows" : 0,
+    "inputRowsPerSecond" : 0.0,
+    "processedRowsPerSecond" : 0.0,
+    "metrics" : {
+      "avgOffsetsBehindLatest" : "0.0",
+      "maxOffsetsBehindLatest" : "0",
+      "minOffsetsBehindLatest" : "0"
+    }
+  } ],
+  "sink" : {
+    "description" : "CassandraTable(org.apache.spark.sql.SparkSession@1189b74,org.apache.spark.sql.util.CaseInsensitiveStringMap@286198bb,com.datastax.spark.connector.cql.CassandraConnector@70b08836,default,DefaultTableMetadata@aa99836c(crypto.prices),None)",
+    "numOutputRows" : 0
+  }
+}
+25/07/14 08:19:30 INFO MicroBatchExecution: Streaming query has been idle and waiting for new data more than 10000 ms.
+25/07/14 08:19:40 INFO MicroBatchExecution: Streaming query has been idle and waiting for new data more than 10000 ms.
+25/07/14 08:19:49 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 10.0.2.15:34155 in memory (size: 5.5 KiB, free: 366.3 MiB)
+25/07/14 08:19:50 INFO MicroBatchExecution: Streaming query has been idle and waiting for new data more than 10000 ms.
+25/07/14 08:20:00 INFO MicroBatchExecution: Streaming query has been idle and waiting for new data more than 10000 ms.
+25/07/14 08:20:10 INFO MicroBatchExecution: Streaming query has been idle and waiting for new data more than 10000 ms.
+25/07/14 08:20:11 INFO CheckpointFileManager: Writing atomically to file:/tmp/checkpoint/offsets/1 using temp file file:/tmp/checkpoint/offsets/.1.b0b1b91f-19f7-4907-8020-f3a960fa587b.tmp
+25/07/14 08:20:11 INFO CheckpointFileManager: Renamed temp file file:/tmp/checkpoint/offsets/.1.b0b1b91f-19f7-4907-8020-f3a960fa587b.tmp to file:/tmp/checkpoint/offsets/1
+25/07/14 08:20:11 INFO MicroBatchExecution: Committed offsets for batch 1. Metadata OffsetSeqMetadata(0,1752481211503,Map(spark.sql.streaming.stateStore.providerClass -> org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider, spark.sql.streaming.join.stateFormatVersion -> 2, spark.sql.streaming.stateStore.compression.codec -> lz4, spark.sql.streaming.stateStore.rocksdb.formatVersion -> 5, spark.sql.streaming.statefulOperator.useStrictDistribution -> true, spark.sql.streaming.flatMapGroupsWithState.stateFormatVersion -> 2, spark.sql.streaming.multipleWatermarkPolicy -> min, spark.sql.streaming.aggregation.stateFormatVersion -> 2, spark.sql.shuffle.partitions -> 200))
+25/07/14 08:20:11 INFO KafkaOffsetReaderAdmin: Partitions added: Map()
+25/07/14 08:20:11 INFO KafkaOffsetReaderAdmin: Partitions added: Map()
+25/07/14 08:20:11 INFO KafkaOffsetReaderAdmin: Partitions added: Map()
+25/07/14 08:20:11 INFO KafkaOffsetReaderAdmin: Partitions added: Map()
+25/07/14 08:20:11 INFO KafkaOffsetReaderAdmin: Partitions added: Map()
+25/07/14 08:20:11 INFO KafkaOffsetReaderAdmin: Partitions added: Map()
+25/07/14 08:20:11 INFO WriteToDataSourceV2Exec: Start processing data source write support: MicroBatchWrite[epoch: 1, writer: CassandraBulkWrite(org.apache.spark.sql.SparkSession@1189b74,com.datastax.spark.connector.cql.CassandraConnector@7b29519f,TableDef(crypto,prices,ArrayBuffer(ColumnDef(id,PartitionKeyColumn,VarCharType)),ArrayBuffer(ColumnDef(ts,ClusteringColumn(0,ASC),BigIntType)),Stream(ColumnDef(name,RegularColumn,VarCharType), ColumnDef(price_usd,RegularColumn,DoubleType), ColumnDef(processing_time,RegularColumn,TimestampType)),Stream(),false,false,Map()),WriteConf(BytesInBatch(1024),1000,Partition,LOCAL_QUORUM,false,false,5,None,TTLOption(DefaultValue),TimestampOption(DefaultValue),true,None),StructType(StructField(id,StringType,true),StructField(name,StringType,true),StructField(price_usd,DoubleType,true),StructField(ts,LongType,true),StructField(processing_time,TimestampType,true)),org.apache.spark.SparkConf@38022aa2)]. The input RDD has 1 partitions.
+25/07/14 08:20:11 INFO SparkContext: Starting job: start at NativeMethodAccessorImpl.java:0
+25/07/14 08:20:11 INFO DAGScheduler: Got job 1 (start at NativeMethodAccessorImpl.java:0) with 1 output partitions
+25/07/14 08:20:11 INFO DAGScheduler: Final stage: ResultStage 1 (start at NativeMethodAccessorImpl.java:0)
+25/07/14 08:20:11 INFO DAGScheduler: Parents of final stage: List()
+25/07/14 08:20:11 INFO DAGScheduler: Missing parents: List()
+25/07/14 08:20:11 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[10] at start at NativeMethodAccessorImpl.java:0), which has no missing parents
+25/07/14 08:20:11 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 34.5 KiB, free 366.3 MiB)
+25/07/14 08:20:11 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 15.3 KiB, free 366.3 MiB)
+25/07/14 08:20:11 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.0.2.15:34155 (size: 15.3 KiB, free: 366.3 MiB)
+25/07/14 08:20:11 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1585
+25/07/14 08:20:11 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[10] at start at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+25/07/14 08:20:11 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+25/07/14 08:20:11 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (10.0.2.15, executor driver, partition 0, PROCESS_LOCAL, 13958 bytes) 
+25/07/14 08:20:11 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+25/07/14 08:20:11 INFO CodeGenerator: Code generated in 43.405516 ms
+25/07/14 08:20:11 INFO CodeGenerator: Code generated in 22.109009 ms
+25/07/14 08:20:11 INFO CodeGenerator: Code generated in 15.90696 ms
+25/07/14 08:20:11 INFO KafkaBatchReaderFactory: Creating Kafka reader topicPartition=crypto-data-0 fromOffset=100 untilOffset=200, for query queryId=b10c372a-1aa5-44a6-96be-2b5c60976740 batchId=1 taskId=1 partitionId=0
+25/07/14 08:20:11 INFO CodeGenerator: Code generated in 22.12949 ms
+25/07/14 08:20:11 INFO CodeGenerator: Code generated in 17.950123 ms
+25/07/14 08:20:12 INFO ConsumerConfig: ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = none
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-spark-kafka-source-75084e28-10b0-4bcb-b6e6-da79c6403235--2090736517-executor-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = spark-kafka-source-75084e28-10b0-4bcb-b6e6-da79c6403235--2090736517-executor
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+25/07/14 08:20:12 INFO AppInfoParser: Kafka version: 3.4.1
+25/07/14 08:20:12 INFO AppInfoParser: Kafka commitId: 8a516edc2755df89
+25/07/14 08:20:12 INFO AppInfoParser: Kafka startTimeMs: 1752481212067
+25/07/14 08:20:12 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-75084e28-10b0-4bcb-b6e6-da79c6403235--2090736517-executor-1, groupId=spark-kafka-source-75084e28-10b0-4bcb-b6e6-da79c6403235--2090736517-executor] Assigned to partition(s): crypto-data-0
+25/07/14 08:20:12 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-75084e28-10b0-4bcb-b6e6-da79c6403235--2090736517-executor-1, groupId=spark-kafka-source-75084e28-10b0-4bcb-b6e6-da79c6403235--2090736517-executor] Seeking to offset 100 for partition crypto-data-0
+25/07/14 08:20:12 INFO Metadata: [Consumer clientId=consumer-spark-kafka-source-75084e28-10b0-4bcb-b6e6-da79c6403235--2090736517-executor-1, groupId=spark-kafka-source-75084e28-10b0-4bcb-b6e6-da79c6403235--2090736517-executor] Resetting the last seen epoch of partition crypto-data-0 to 0 since the associated topicId changed from null to 8afroU_WS32Au827Pa5E_Q
+25/07/14 08:20:12 INFO Metadata: [Consumer clientId=consumer-spark-kafka-source-75084e28-10b0-4bcb-b6e6-da79c6403235--2090736517-executor-1, groupId=spark-kafka-source-75084e28-10b0-4bcb-b6e6-da79c6403235--2090736517-executor] Cluster ID: Q1VYY_IRQCGwrUnvbb-DOQ
+25/07/14 08:20:12 INFO SubscriptionState: [Consumer clientId=consumer-spark-kafka-source-75084e28-10b0-4bcb-b6e6-da79c6403235--2090736517-executor-1, groupId=spark-kafka-source-75084e28-10b0-4bcb-b6e6-da79c6403235--2090736517-executor] Seeking to earliest offset of partition crypto-data-0
+25/07/14 08:20:12 INFO SubscriptionState: [Consumer clientId=consumer-spark-kafka-source-75084e28-10b0-4bcb-b6e6-da79c6403235--2090736517-executor-1, groupId=spark-kafka-source-75084e28-10b0-4bcb-b6e6-da79c6403235--2090736517-executor] Resetting offset for partition crypto-data-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[ubuntu-jammy:9092 (id: 0 rack: null)], epoch=0}}.
+25/07/14 08:20:12 INFO SubscriptionState: [Consumer clientId=consumer-spark-kafka-source-75084e28-10b0-4bcb-b6e6-da79c6403235--2090736517-executor-1, groupId=spark-kafka-source-75084e28-10b0-4bcb-b6e6-da79c6403235--2090736517-executor] Seeking to latest offset of partition crypto-data-0
+25/07/14 08:20:12 INFO SubscriptionState: [Consumer clientId=consumer-spark-kafka-source-75084e28-10b0-4bcb-b6e6-da79c6403235--2090736517-executor-1, groupId=spark-kafka-source-75084e28-10b0-4bcb-b6e6-da79c6403235--2090736517-executor] Resetting offset for partition crypto-data-0 to position FetchPosition{offset=200, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[ubuntu-jammy:9092 (id: 0 rack: null)], epoch=0}}.
+25/07/14 08:20:13 INFO DataWritingSparkTask: Commit authorized for partition 0 (task 1, attempt 0, stage 1.0)
+25/07/14 08:20:13 INFO DataWritingSparkTask: Committed partition 0 (task 1, attempt 0, stage 1.0)
+25/07/14 08:20:13 INFO KafkaDataConsumer: From Kafka topicPartition=crypto-data-0 groupId=spark-kafka-source-75084e28-10b0-4bcb-b6e6-da79c6403235--2090736517-executor read 100 records through 1 polls (polled  out 100 records), taking 633958262 nanos, during time span of 1202428394 nanos.
+25/07/14 08:20:13 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 1864 bytes result sent to driver
+25/07/14 08:20:13 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 1613 ms on 10.0.2.15 (executor driver) (1/1)
+25/07/14 08:20:13 INFO DAGScheduler: ResultStage 1 (start at NativeMethodAccessorImpl.java:0) finished in 1.656 s
+25/07/14 08:20:13 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+25/07/14 08:20:13 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+25/07/14 08:20:13 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+25/07/14 08:20:13 INFO DAGScheduler: Job 1 finished: start at NativeMethodAccessorImpl.java:0, took 1.670103 s
+25/07/14 08:20:13 INFO WriteToDataSourceV2Exec: Data source write support MicroBatchWrite[epoch: 1, writer: CassandraBulkWrite(org.apache.spark.sql.SparkSession@1189b74,com.datastax.spark.connector.cql.CassandraConnector@7b29519f,TableDef(crypto,prices,ArrayBuffer(ColumnDef(id,PartitionKeyColumn,VarCharType)),ArrayBuffer(ColumnDef(ts,ClusteringColumn(0,ASC),BigIntType)),Stream(ColumnDef(name,RegularColumn,VarCharType), ColumnDef(price_usd,RegularColumn,DoubleType), ColumnDef(processing_time,RegularColumn,TimestampType)),Stream(),false,false,Map()),WriteConf(BytesInBatch(1024),1000,Partition,LOCAL_QUORUM,false,false,5,None,TTLOption(DefaultValue),TimestampOption(DefaultValue),true,None),StructType(StructField(id,StringType,true),StructField(name,StringType,true),StructField(price_usd,DoubleType,true),StructField(ts,LongType,true),StructField(processing_time,TimestampType,true)),org.apache.spark.SparkConf@38022aa2)] is committing.
+25/07/14 08:20:13 INFO WriteToDataSourceV2Exec: Data source write support MicroBatchWrite[epoch: 1, writer: CassandraBulkWrite(org.apache.spark.sql.SparkSession@1189b74,com.datastax.spark.connector.cql.CassandraConnector@7b29519f,TableDef(crypto,prices,ArrayBuffer(ColumnDef(id,PartitionKeyColumn,VarCharType)),ArrayBuffer(ColumnDef(ts,ClusteringColumn(0,ASC),BigIntType)),Stream(ColumnDef(name,RegularColumn,VarCharType), ColumnDef(price_usd,RegularColumn,DoubleType), ColumnDef(processing_time,RegularColumn,TimestampType)),Stream(),false,false,Map()),WriteConf(BytesInBatch(1024),1000,Partition,LOCAL_QUORUM,false,false,5,None,TTLOption(DefaultValue),TimestampOption(DefaultValue),true,None),StructType(StructField(id,StringType,true),StructField(name,StringType,true),StructField(price_usd,DoubleType,true),StructField(ts,LongType,true),StructField(processing_time,TimestampType,true)),org.apache.spark.SparkConf@38022aa2)] committed.
+25/07/14 08:20:13 INFO CheckpointFileManager: Writing atomically to file:/tmp/checkpoint/commits/1 using temp file file:/tmp/checkpoint/commits/.1.23fab35d-1042-40c9-988b-a0cd1a82fb69.tmp
+25/07/14 08:20:13 INFO CheckpointFileManager: Renamed temp file file:/tmp/checkpoint/commits/.1.23fab35d-1042-40c9-988b-a0cd1a82fb69.tmp to file:/tmp/checkpoint/commits/1
+25/07/14 08:20:13 INFO MicroBatchExecution: Streaming query made progress: {
+  "id" : "b10c372a-1aa5-44a6-96be-2b5c60976740",
+  "runId" : "7bb89c01-9b47-453a-8538-cf4f5d509638",
+  "name" : null,
+  "timestamp" : "2025-07-14T08:20:11.502Z",
+  "batchId" : 1,
+  "numInputRows" : 100,
+  "inputRowsPerSecond" : 9090.909090909092,
+  "processedRowsPerSecond" : 54.525627044711015,
+  "durationMs" : {
+    "addBatch" : 1738,
+    "commitOffsets" : 38,
+    "getBatch" : 0,
+    "latestOffset" : 1,
+    "queryPlanning" : 38,
+    "triggerExecution" : 1834,
+    "walCommit" : 19
+  },
+  "stateOperators" : [ ],
+  "sources" : [ {
+    "description" : "KafkaV2[Subscribe[crypto-data]]",
+    "startOffset" : {
+      "crypto-data" : {
+        "0" : 100
+      }
+    },
+    "endOffset" : {
+      "crypto-data" : {
+        "0" : 200
+      }
+    },
+    "latestOffset" : {
+      "crypto-data" : {
+        "0" : 200
+      }
+    },
+    "numInputRows" : 100,
+    "inputRowsPerSecond" : 9090.909090909092,
+    "processedRowsPerSecond" : 54.525627044711015,
+    "metrics" : {
+      "avgOffsetsBehindLatest" : "0.0",
+      "maxOffsetsBehindLatest" : "0",
+      "minOffsetsBehindLatest" : "0"
+    }
+  } ],
+  "sink" : {
+    "description" : "CassandraTable(org.apache.spark.sql.SparkSession@1189b74,org.apache.spark.sql.util.CaseInsensitiveStringMap@286198bb,com.datastax.spark.connector.cql.CassandraConnector@70b08836,default,DefaultTableMetadata@aa99836c(crypto.prices),None)",
+    "numOutputRows" : 100
+  }
+}
+25/07/14 08:20:23 INFO MicroBatchExecution: Streaming query has been idle and waiting for new data more than 10000 ms.
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/home/vagrant/spark-3.5.1-bin-hadoop3/python/lib/py4j-0.10.9.7-src.zip/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+RuntimeError: reentrant call inside <_io.BufferedReader name=3>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vagrant/spark-3.5.1-bin-hadoop3/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/vagrant/spark-3.5.1-bin-hadoop3/python/lib/py4j-0.10.9.7-src.zip/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/home/vagrant/spark-3.5.1-bin-hadoop3/python/lib/py4j-0.10.9.7-src.zip/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "/usr/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/home/vagrant/spark-3.5.1-bin-hadoop3/python/lib/pyspark.zip/pyspark/context.py", line 381, in signal_handler
+    self.cancelAllJobs()
+  File "/home/vagrant/spark-3.5.1-bin-hadoop3/python/lib/pyspark.zip/pyspark/context.py", line 2446, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+  File "/home/vagrant/spark-3.5.1-bin-hadoop3/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/vagrant/spark-3.5.1-bin-hadoop3/python/lib/pyspark.zip/pyspark/errors/exceptions/captured.py", line 179, in deco
+    return f(*a, **kw)
+  File "/home/vagrant/spark-3.5.1-bin-hadoop3/python/lib/py4j-0.10.9.7-src.zip/py4j/protocol.py", line 334, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o20.sc
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vagrant/spark-3.5.1-bin-hadoop3/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/vagrant/spark-3.5.1-bin-hadoop3/python/lib/py4j-0.10.9.7-src.zip/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+Traceback (most recent call last):
+  File "/home/vagrant/project/spark_streaming.py", line 51, in <module>
+    query.awaitTermination()
+  File "/home/vagrant/spark-3.5.1-bin-hadoop3/python/lib/pyspark.zip/pyspark/sql/streaming/query.py", line 221, in awaitTermination
+  File "/home/vagrant/spark-3.5.1-bin-hadoop3/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1322, in __call__
+  File "/home/vagrant/spark-3.5.1-bin-hadoop3/python/lib/pyspark.zip/pyspark/errors/exceptions/captured.py", line 179, in deco
+  File "/home/vagrant/spark-3.5.1-bin-hadoop3/python/lib/py4j-0.10.9.7-src.zip/py4j/protocol.py", line 334, in get_return_value
+py4j.protocol.Py4JError: An error occurred while calling o77.awaitTermination
+25/07/14 08:20:29 INFO ConsumerCoordinator: [Consumer clientId=consumer-spark-kafka-source-75084e28-10b0-4bcb-b6e6-da79c6403235--2090736517-executor-1, groupId=spark-kafka-source-75084e28-10b0-4bcb-b6e6-da79c6403235--2090736517-executor] Resetting generation and member id due to: consumer pro-actively leaving the group
+25/07/14 08:20:29 INFO CassandraConnector: Disconnected from Cassandra cluster.
+25/07/14 08:20:29 INFO ConsumerCoordinator: [Consumer clientId=consumer-spark-kafka-source-75084e28-10b0-4bcb-b6e6-da79c6403235--2090736517-executor-1, groupId=spark-kafka-source-75084e28-10b0-4bcb-b6e6-da79c6403235--2090736517-executor] Request joining group due to: consumer pro-actively leaving the group
+25/07/14 08:20:29 INFO SerialShutdownHooks: Successfully executed shutdown hook: Clearing session cache for C* connector
+25/07/14 08:20:29 INFO Metrics: Metrics scheduler closed
+25/07/14 08:20:29 INFO Metrics: Closing reporter org.apache.kafka.common.metrics.JmxReporter
+25/07/14 08:20:29 INFO Metrics: Metrics reporters closed
+25/07/14 08:20:29 INFO AppInfoParser: App info kafka.consumer for consumer-spark-kafka-source-75084e28-10b0-4bcb-b6e6-da79c6403235--2090736517-executor-1 unregistered
+25/07/14 08:20:29 INFO SparkContext: Invoking stop() from shutdown hook
+25/07/14 08:20:29 INFO SparkContext: SparkContext is stopping with exitCode 0.
+25/07/14 08:20:29 INFO SparkUI: Stopped Spark web UI at http://10.0.2.15:8080
+25/07/14 08:20:29 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+25/07/14 08:20:29 INFO MemoryStore: MemoryStore cleared
+25/07/14 08:20:29 INFO BlockManager: BlockManager stopped
+25/07/14 08:20:29 INFO BlockManagerMaster: BlockManagerMaster stopped
+25/07/14 08:20:29 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+25/07/14 08:20:29 INFO SparkContext: Successfully stopped SparkContext
+25/07/14 08:20:29 INFO ShutdownHookManager: Shutdown hook called
+25/07/14 08:20:29 INFO ShutdownHookManager: Deleting directory /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85
+25/07/14 08:20:29 INFO ShutdownHookManager: Deleting directory /tmp/spark-2b5da479-b538-46cb-8289-2c2436b1dd85/pyspark-39395fe4-9296-4df8-b862-601435b3c33f
+25/07/14 08:20:29 INFO ShutdownHookManager: Deleting directory /tmp/spark-2161a165-04a3-4968-a4b0-651b2b491224

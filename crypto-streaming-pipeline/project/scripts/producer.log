@@ -1,0 +1,36 @@
+2025-07-14 08:19:10,100 - INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2025-07-14 08:19:10,118 - INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv4 ('127.0.0.1', 9092)]>: Broker version identified as 2.6
+2025-07-14 08:19:10,118 - INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2025-07-14 08:19:10,125 - INFO - Fetching data from CoinLore API
+2025-07-14 08:19:10,740 - INFO - Received 100 cryptocurrency records
+2025-07-14 08:19:10,740 - INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=0 host=ubuntu-jammy:9092 <connecting> [IPv4 ('127.0.1.1', 9092)]>: connecting to ubuntu-jammy:9092 [('127.0.1.1', 9092) IPv4]
+2025-07-14 08:19:10,741 - INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=0 host=ubuntu-jammy:9092 <connected> [IPv4 ('127.0.1.1', 9092)]>: Connection complete.
+2025-07-14 08:19:10,741 - INFO - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2025-07-14 08:19:10,745 - INFO - Sent Bitcoin: 122406.29
+2025-07-14 08:20:10,808 - INFO - Fetching data from CoinLore API
+2025-07-14 08:20:11,494 - INFO - Received 100 cryptocurrency records
+2025-07-14 08:20:11,495 - INFO - Sent Bitcoin: 122406.29
+2025-07-14 08:21:11,555 - INFO - Fetching data from CoinLore API
+2025-07-14 08:21:12,165 - INFO - Received 100 cryptocurrency records
+2025-07-14 08:21:12,166 - INFO - Sent Bitcoin: 122400.82
+2025-07-14 08:22:12,227 - INFO - Fetching data from CoinLore API
+2025-07-14 08:22:12,849 - INFO - Received 100 cryptocurrency records
+2025-07-14 08:22:12,849 - INFO - Sent Bitcoin: 122468.05
+2025-07-14 08:23:12,913 - INFO - Fetching data from CoinLore API
+2025-07-14 08:23:13,541 - INFO - Received 100 cryptocurrency records
+2025-07-14 08:23:13,542 - INFO - Sent Bitcoin: 122468.05
+2025-07-14 08:24:13,620 - INFO - Fetching data from CoinLore API
+2025-07-14 08:24:18,155 - INFO - Received 100 cryptocurrency records
+2025-07-14 08:24:18,155 - INFO - Sent Bitcoin: 122468.05
+2025-07-14 08:25:18,220 - INFO - Fetching data from CoinLore API
+2025-07-14 08:25:18,832 - INFO - Received 100 cryptocurrency records
+2025-07-14 08:25:18,832 - INFO - Sent Bitcoin: 122468.05
+2025-07-14 08:26:18,872 - INFO - Fetching data from CoinLore API
+2025-07-14 08:26:19,501 - INFO - Received 100 cryptocurrency records
+2025-07-14 08:26:19,501 - INFO - Sent Bitcoin: 122468.05
+2025-07-14 08:27:19,561 - INFO - Fetching data from CoinLore API
+2025-07-14 08:27:20,255 - INFO - Received 100 cryptocurrency records
+2025-07-14 08:27:20,255 - INFO - Sent Bitcoin: 122403.56
+2025-07-14 08:28:20,295 - INFO - Fetching data from CoinLore API
+2025-07-14 08:28:20,915 - INFO - Received 100 cryptocurrency records
+2025-07-14 08:28:20,916 - INFO - Sent Bitcoin: 122342.31
